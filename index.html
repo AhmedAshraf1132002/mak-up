@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-App</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Make-up..css">
+    <link type="photos/icon" rel="icon" href="photos/logo.png">
+</head>
+
+<body>
+
+    <!-- ===========slide-Navbar========= -->
+
+    
+    <nav>
+        <div class="side-nav position-fixed vh-100 d-flex flex-column justify-content-between ">
+            <div class="menu">
+                <ul class="p-0">
+                    <a href="#">
+                        <li class="nowPlaying">Now Playing</li>
+                    </a>
+                    <a href="#">
+                        <li class="Popular">Popular</li>
+                    </a>
+                    <a href="#">
+                        <li class="topRated">Top Rated</li>
+                    </a>
+                    <a href="#">
+                        <li class="Trending">Trending</li>
+                    </a>
+                    <a href="#">
+                        <li class="Upcoming">Upcoming</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact Us</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="side-nav-footer">
+                <div class="social-footer  m-3 ">
+                    <a href="#"><i class="fa-brands fa-facebook-f text-white"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter text-white"></i></a>
+                    <a href="#"> <i class="fa-solid fa-globe text-white"></i></a>
+                </div>
+                <p>Copyright © 2024 All Rights Reserved.
+                    <br>
+                    Created By <a href="#"><span class="text-danger fw-bold">Ahmed Ashraf</span></a>
+                </p>
+            </div>
+        </div>
+        <div class="small-nav">
+            <div class="nav-logo my-4">
+                <img class="w-100" src="photos/logo.png" alt="logo-png">
+            </div>
+            <div class="nav-menu">
+                <!-- <a href="#"><i class="fa-solid fa-xmark fa-2x closeNav"></i></a> -->
+                <a href="#"><i class="fa-solid fa-bars fa-2x openNav "></i></a>
+            </div>
+            <div class="social-nav d-flex flex-column my-4">
+                <a href="#"><i class="fa-solid fa-globe "></i></a>
+                <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- ==========card-of-Game======== -->
+
+    <section class="container py-5 " id="hero">
+        <input type="search" id="search"
+            class=" search form-control w-50 rounded-pill m-auto bg-transparent shadow-none text-white px-3"
+            placeholder="Search" onkeyup="search(this.value)" />
+        <div class="row text-white g-4 mt-3" id="demo">
+
+        </div>
+
+    </section>
+
+    <!-- ==========Contact-section======== -->
+
+    <section class="container text-white  py-5" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Enter Your Name" class="form-control mt-3 text-white" required id="nameInput" />
+                </div>
+                <div class="col-md-6">
+                    <input type="email" placeholder="Enter Your Email" class="form-control mt-3 text-white" required id="emailInput" />
+                </div>
+                <div class="col-md-6">
+                    <input type="tel" placeholder="Enter Your Phone" class="form-control mt-3 text-white" required id="phoneInput" />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Enter Your Age" class="form-control mt-3 text-white" required id="ageInput" />
+                </div>
+                <div class="col-md-6">
+                    <input type="password" placeholder="Enter Your Password" class="form-control mt-3 text-white" required id="passwordInput" />
+                </div>
+                <div class="col-md-6">
+                    <input type="password" placeholder="ReEnter Password" class="form-control mt-3 text-white" required id="reEnterInput" />
+                </div>
+                <div class="col-md-12 mt-4">
+                    <button type="submit" class="btn-form" disabled id="addBtn">submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- ==========arrow-icon======== -->
+
+    <div class="backTop d-none">
+        <!-- ===== class="active" ===== -->
+        <a href="#"><i class="fa-solid fa-arrow-up-long text-white"></i></a>
+    </div>
+
+    <!-- ==========loading-spinner======== -->
+
+    <!-- <div class="loaading">
+        <span class="loader"></span>
+    </div> -->
+
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/Make-up.js"></script>
+</body>
+
+</html>
